@@ -1,0 +1,1136 @@
+[
+  {
+    "psi_id": "PSI-101",
+    "name": "Smoke Aerosol Measurement Experiment-Reflight(SAME-R)",
+    "short_name": "SAME-R",
+    "doi": "10.60555/2np7-jv14",
+    "doi_url": "https://doi.org/10.60555/2np7-jv14",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Detection"
+    ],
+    "objective": "Quantify smoke-particle sizes in low gravity and relate the droplet size distribution to smoke generation and transport conditions.",
+    "source_objective_verbatim": "Similar to the original SAME investigation, the primary objective of the SAME-R investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment.",
+    "source_findings": "NASA PSI describes a reduced-gravity smoke-aerosol investigation intended to inform smoke-detector response. This dashboard does not treat PSI-101 phase exceptions as fires, alarms, or hazards.",
+    "fuel_or_sample": "Pyrell® intumescent fire-retardant foam (Foamex), plus Kapton, Teflon, cellulose and silicone samples in the SAME/SAME-R material set; replaced the DBP samples used in the earlier SAME study.",
+    "hardware": "SAME flight hardware in the Microgravity Science Glovebox (MSG): near-field smoke generator, far-field box, DustTrak aerosol monitor, P-Trak condensation nuclei counter, ionization/photoelectric detectors and thermophoretic soot samplers.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity (ISS investigation; no lunar or Mars partial-gravity measurements).",
+    "oxygen_recorded": "Cabin-air atmosphere of approximately 21% O₂ by volume; a numeric oxygen test matrix is not stated in the PSI-101 overview metadata.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Cabin pressure of approximately 14.7 psi; pressure was not varied as a test parameter in the overview metadata.",
+    "pressure_range_atm": null,
+    "airflow_recorded": "Quiescent sample heating with 0–5 cm/s residual experiment/cabin flow; forced-flow values are not tabulated in the overview metadata.",
+    "airflow_range_cm_s": [
+      0.0,
+      5.0
+    ],
+    "sensors_variables": "DustTrak aerosol monitor, P-Trak condensation nuclei counter, ionization detector, M-pass diagnostics; smoke particle size/distribution, aerosol mass concentration and smoke transport. Local Pyrell CSVs also record DustTrak A/B measurements and analog channels.",
+    "outcomes": "NASA PSI states that SAME-R completed 66 flight test points and that post-flight ground tests were used to improve data reduction and check the lognormal-distribution assumption. The local analysis covers only the validated Pyrell source runs present in this repository.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record includes downloadable files. Local source data are present for the Pyrell subset; this dashboard validates and analyzes that subset only.",
+    "local_data_status": "Locally analyzed: selected Pyrell runs 63, 64, 76, 84, 95, 97; historical classification and exception identities validated against archived outputs.",
+    "conditions_evidence": "NASA PSI PSI-101 overview and local run CSV metadata; unknown fields are not inferred.",
+    "tags": [
+      "smoke",
+      "aerosol",
+      "particle size",
+      "detector",
+      "Pyrell",
+      "SAME-R"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Aerosol / Dust",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      5.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Sauter Mean Diameter (D32)",
+      "Aerosol mass concentration",
+      "Particle number density",
+      "Smoke aging / coagulation time",
+      "Detector response ratio"
+    ],
+    "earth_spinoff": {
+      "title": "Dust-discriminating photoelectric / ionization detectors",
+      "nasa_origin": "SAME / SAME-R smoke aerosol measurement (NASA Glenn Research Center)",
+      "terrestrial_application": "Mine, industrial and marine early-warning detectors that separate nuisance dust from pyrolysis smoke using particle-size and number-density signatures.",
+      "impact_metric": "Supports nuisance-alarm rejection logic; no field effectiveness claim is made by this prototype."
+    },
+    "historical_incident_links": [
+      "Artemis II (false/nuisance smoke alarm telemetry)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-102",
+    "name": "Smoke and Aerosol Measurement Experiment(SAME)",
+    "short_name": "SAME",
+    "doi": "10.60555/gd4k-8h62",
+    "doi_url": "https://doi.org/10.60555/gd4k-8h62",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Detection"
+    ],
+    "objective": "Quantify liquid-smoke particle sizes in low gravity and relate the droplet size distribution to smoke generation and transport so that spacecraft smoke-detector response can be evaluated.",
+    "source_objective_verbatim": "One of the major goals of this investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment.",
+    "source_findings": "SAME tested the hypothesis that, without buoyancy, smoke particles grow larger and fewer in number than in 1g, which can change detector response. TEM analysis of thermophoretic samples and detector-response records are the primary products.",
+    "fuel_or_sample": "Overheated spacecraft materials producing liquid aerosol smoke; the PSI experimental table lists Teflon and Kapton samples with 5–10 cm/s air flow, aged 1–20 minutes.",
+    "hardware": "SAME near-field hardware and far-field box in the Microgravity Science Glovebox (MSG); two smoke detectors, video cameras, igniter and thermophoretic soot samplers.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported for this investigation.",
+    "oxygen_recorded": "Cabin-air atmosphere of approximately 21% O₂ by volume; the overview states no oxygen matrix.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Cabin pressure of approximately 1 atm; no pressure matrix is stated in the overview metadata.",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "PSI experimental table lists 5 cm/s and 10 cm/s air flow for Teflon and Kapton smoke samples.",
+    "airflow_range_cm_s": [
+      0.0,
+      10.0
+    ],
+    "sensors_variables": "Two smoke detectors, video record, thermophoretic samplers analyzed by TEM; primary/aggregate particle dimensions, mass-loss rate, aging duration, detector response.",
+    "outcomes": "NASA PSI reports that low-gravity smokes can exhibit larger droplet sizes than in normal gravity, with reduced number density for the same smoke mass; this is a source-described research finding, not a detector qualification for a specific habitat.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists investigation files, experimental table and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no SAME raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-102 overview and experimental table (Teflon/Kapton, 5–10 cm/s, aging 1–20 min).",
+    "tags": [
+      "smoke",
+      "aerosol",
+      "SAME",
+      "Teflon",
+      "Kapton",
+      "detector"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Aerosol / Dust",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      10.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Sauter Mean Diameter (D32)",
+      "Log-normal geometric mean diameter",
+      "Particle number density",
+      "Coagulation / aging time",
+      "Detector response"
+    ],
+    "earth_spinoff": {
+      "title": "Early-warning smoke detection in large enclosed spaces",
+      "nasa_origin": "SAME thermophoretic sampling and low-gravity smoke characterization",
+      "terrestrial_application": "Detector placement and alarm-threshold design for tunnels, ships and clean rooms where buoyant smoke transport differs from the test room.",
+      "impact_metric": "Provides particle-size evidence for detector selection; no certification claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-47",
+    "name": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2(DAFT / DAFT-2)",
+    "short_name": "DAFT",
+    "doi": "10.60555/ztgj-d202",
+    "doi_url": "https://doi.org/10.60555/ztgj-d202",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Detection"
+    ],
+    "objective": "Demonstrate a modified TSI P-Trak condensation nuclei counter in microgravity, compare it with the DustTrak control, and create reproducible aerosol standards so that smoke measurements are not confounded by cabin dust.",
+    "source_objective_verbatim": "The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuclei counter, the TSI P-Trak, to quantify smoke aerosols in a microgravity environment, however there were concerns that the P-Trak would not be reliable in microgravity as it relies on gravity to recycle isopropyl alcohol used in the measurement process.",
+    "source_findings": "DAFT used Arizona Road Dust aerosolized with gaseous nitrogen in 15-litre Mylar bags and compared the modified P-Trak against the DustTrak. It establishes a particulate standard for separating nuisance dust from pyrolysis smoke signatures.",
+    "fuel_or_sample": "Arizona Road Dust (ARD Fine) aerosolized with GN₂ as an aerosol standard; ISS cabin dust and separated Velcro were also sampled.",
+    "hardware": "Modified TSI P-Trak (capillary isopropanol recycle, mercury orientation switch removed), DustTrak control and 15-litre Mylar aerosol bags; ISS Express rack, Node 1 and rack-adjacent sampling locations.",
+    "platform": "International Space Station (ISS); microgravity investigation (DAFT and DAFT-2).",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported.",
+    "oxygen_recorded": "Cabin-air atmosphere of approximately 21% O₂ by volume; not an experimental variable.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Cabin pressure of approximately 1 atm; not an experimental variable.",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "Quiescent bag and cabin sampling; no imposed flow duct.",
+    "airflow_range_cm_s": [
+      0.0,
+      0.0
+    ],
+    "sensors_variables": "Modified P-Trak condensation nuclei count, DustTrak mass concentration, aerosol bag dilution, instrument orientation; particle count, mass concentration and dust/smoke response ratio.",
+    "outcomes": "NASA PSI describes DAFT as risk mitigation for SAME and as evidence that aerosol standards can be generated and measured in microgravity. The terrestrial relevance is instrument adaptation for dust-laden environments.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists DAFT data files, final report, post-flight report and representative imagery; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no DAFT raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-47 overview and experimental table (ARD Fine, GN₂ aerosol, Express rack 4 / Node 1).",
+    "tags": [
+      "dust",
+      "aerosol",
+      "detector",
+      "DAFT",
+      "Arizona Road Dust",
+      "nuisance alarm"
+    ],
+    "hardware_rack": "ISS Cabin",
+    "fuel_phase": "Aerosol / Dust",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      0.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Arizona Road Dust size distribution",
+      "Sauter Mean Diameter (D32)",
+      "Photoelectric / ionization response ratio",
+      "Nuisance-alarm threshold",
+      "Aerosol mass concentration"
+    ],
+    "earth_spinoff": {
+      "title": "Mine and industrial dust-discriminating detectors",
+      "nasa_origin": "DAFT / DAFT-2 modified condensation nuclei counter and aerosol standards",
+      "terrestrial_application": "Photoelectric/ionization detectors and portable aerosol monitors that distinguish nuisance mineral dust from combustion smoke in mines, tunnels and processing plants.",
+      "impact_metric": "Targets false-alarm reduction in dust-laden environments; no field certification claim."
+    },
+    "historical_incident_links": [
+      "Artemis II (false/nuisance smoke alarm telemetry)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-26",
+    "name": "Burning and Suppression of Solids(BASS)",
+    "short_name": "BASS",
+    "doi": "10.60555/58h4-dy80",
+    "doi_url": "https://doi.org/10.60555/58h4-dy80",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Prevention",
+      "Suppression"
+    ],
+    "objective": "Examine ignition, flame spread and extinction of solid fuels in microgravity over a range of forced-flow speeds and oxygen concentrations, and relate the results to fire-detection and suppression models.",
+    "source_objective_verbatim": "The two main objectives for BASS are to: 1.) Begin to bridge the gap between normal-gravity material flammability screening tests and microgravity flammability behavior, and 2.) provide validation data for combustion models used in spacecraft fire safety.",
+    "source_findings": "BASS burned thin and thick flat samples, acrylic spheres and candles in a small MSG flow duct. Results show that samples can burn weakly in quiescence and then flare up when ventilation increases.",
+    "fuel_or_sample": "PMMA spheres, rods and slabs, thin polymer films and fabric samples in practical geometries; the exact material for a test must be confirmed in its source record.",
+    "hardware": "Small fan-driven flow duct in the Microgravity Science Glovebox (MSG) with video and 35-mm still imagery, igniter and flow control; apparatus capability up to 40 cm/s.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported.",
+    "oxygen_recorded": "Oxygen concentration was varied by nitrogen dilution in the MSG working volume; individual test values are in the source files.",
+    "oxygen_comparison": {
+      "operator": "<",
+      "value": 21,
+      "unit": "% O₂",
+      "scope": "Study envelope spanning oxygen-vitiated tests; not a per-test value."
+    },
+    "pressure_recorded": "MSG cabin atmosphere of approximately 1 atm; pressure was not the primary varied parameter.",
+    "pressure_range_atm": null,
+    "airflow_recorded": "The MSG flow duct could impose speeds up to 40 cm/s; per-test speed and direction are in the source records.",
+    "airflow_range_cm_s": null,
+    "airflow_max_cm_s": 40,
+    "sensors_variables": "Video and still imagery, igniter timing, fan speed, oxygen concentration; ignition delay, flame appearance, spread rate, extinction time versus fuel geometry and nitrogen flow.",
+    "outcomes": "BASS established microgravity burning and extinction data for model validation and showed the sensitivity of weak flames to ventilation changes; no universal material limit is represented here.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists experimental data, video and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no BASS raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-26 overview and BASS NTRS summary; 40 cm/s is apparatus capability, not a confirmed test point.",
+    "tags": [
+      "solid fuel",
+      "PMMA",
+      "flame spread",
+      "extinction",
+      "ventilation",
+      "BASS"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Solid",
+    "o2_range_pct": [
+      13.5,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      40.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Minimum Oxygen Concentration (MOC)",
+      "Flame spread rate",
+      "Forced-flow velocity",
+      "Fuel thickness / geometry",
+      "Extinction time"
+    ],
+    "earth_spinoff": {
+      "title": "PBI / Nomex firefighter turnout gear and material screening",
+      "nasa_origin": "BASS solid-fuel flammability and extinction data",
+      "terrestrial_application": "Screening of fire-resistant textiles and foams for firefighter turnout gear, aircraft interiors and confined-space worker protection.",
+      "impact_metric": "Informs material-selection test matrices; no product certification claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)",
+      "Mir (1997 Vika/TGK lithium perchlorate oxygen generator fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-25",
+    "name": "Burning and Suppression of Solids - II(BASS-II)",
+    "short_name": "BASS-II",
+    "doi": "10.60555/4qc4-de67",
+    "doi_url": "https://doi.org/10.60555/4qc4-de67",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Prevention",
+      "Suppression"
+    ],
+    "objective": "Study ignition, flame growth, flame spread and extinction limits of solid fuels in low-velocity forced flows in microgravity; support combustion models and materials/fire-safety research.",
+    "source_objective_verbatim": "Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in low-velocity forced flows in microgravity.",
+    "source_findings": "NASA PSI describes BASS-II as varying flow and oxygen conditions and measuring flame appearance, growth and spread; individual result values require consulting the record files and publications.",
+    "fuel_or_sample": "PMMA rods, sheets and spherical sections, cotton-fiberglass (Sibal) fabric, and thin/thick flat samples; exact material depends on the test.",
+    "hardware": "Small wind tunnel in the Microgravity Science Glovebox (MSG); imaging and containment provided by MSG; SPICE-derived fan flow duct.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported for this investigation.",
+    "oxygen_recorded": "Oxygen concentration varied below 21% by nitrogen vitiation; individual test values are in source files.",
+    "oxygen_comparison": {
+      "operator": "<",
+      "value": 21,
+      "unit": "% O₂",
+      "scope": "NASA PSI states oxygen was varied below 21%; this is a study envelope, not a per-test value."
+    },
+    "pressure_recorded": "MSG cabin pressure of approximately 14.7 psi; pressure was not the primary varied parameter and is not stated numerically in the overview metadata.",
+    "pressure_range_atm": null,
+    "airflow_recorded": "NASA PSI says the wind tunnel could impose speeds up to 40 cm/s; actual per-test speed and direction are in source records.",
+    "airflow_range_cm_s": null,
+    "airflow_max_cm_s": 40,
+    "sensors_variables": "Imaging and experiment telemetry; flame appearance, ignition, growth, spread/extinction, forced-flow speed/direction and oxygen concentration. NASA PSI lists on-board CSA-CP and CDM sensor readings among publications/data.",
+    "outcomes": "NASA PSI describes intended contributions to combustion models used for fire detection and suppression design; no universal safety limit is represented here.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists extensive raw data, video and engineering files; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no BASS-II raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-25 overview; maximum apparatus flow capability is distinguished from actual per-test conditions.",
+    "tags": [
+      "solid fuel",
+      "ignition",
+      "flame spread",
+      "extinction",
+      "oxygen",
+      "forced flow",
+      "BASS-II"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Solid",
+    "o2_range_pct": [
+      13.5,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      40.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Minimum Oxygen Concentration (MOC)",
+      "Limiting Oxygen Index (LOI)",
+      "Flame spread rate",
+      "Forced-flow velocity",
+      "Fuel geometry"
+    ],
+    "earth_spinoff": {
+      "title": "Fire-safe material and model research",
+      "nasa_origin": "BASS-II oxygen-vitiated solid-fuel flammability data",
+      "terrestrial_application": "Material screening and compartment-fire models for low-ventilation spaces such as submarines, aircraft cargo bays and server rooms.",
+      "impact_metric": "Source-test dependent; no field-effectiveness claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-98",
+    "name": "Spacecraft Fire Safety Experiment-I(SAFFIRE-I)",
+    "short_name": "SAFFIRE-I",
+    "doi": "10.60555/0t15-1z43",
+    "doi_url": "https://doi.org/10.60555/0t15-1z43",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire, Smoke Distribution",
+    "pillars": [
+      "Prevention",
+      "Detection"
+    ],
+    "objective": "Determine how rapidly a large-scale fire grows in low gravity and investigate low-gravity flammability limits relative to NASA's normal-gravity screening test.",
+    "source_objective_verbatim": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+    "source_findings": "NASA PSI describes SAFFIRE-I as an unmanned, large-scale spacecraft-material fire experiment intended to study flame growth, flammability and smoke for fire-safety research.",
+    "fuel_or_sample": "Sibal composite fabric: 75% cotton and 25% fiberglass by weight; NASA PSI describes a sample approximately 0.94 m long and 0.4 m wide.",
+    "hardware": "SAFFIRE-I flight unit with sample card in a flow duct; cameras, thermocouples, radiometers, solid-state gas/pressure sensors and anemometers.",
+    "platform": "Cygnus cargo vehicle after departure from the ISS; NASA PSI project platform is listed as ISS.",
+    "gravity_level": "Microgravity free-flight experiment; not a lunar/Mars partial-gravity test.",
+    "oxygen_recorded": "Oxygen mole fraction was measured; a numeric test range is not stated in the overview metadata.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Pressure was measured; numeric test conditions are not stated in the overview metadata.",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "NASA PSI reports an air-flow velocity of 20 cm/s in the flow duct.",
+    "airflow_range_cm_s": [
+      20,
+      20
+    ],
+    "sensors_variables": "Two cameras, thermocouples, radiometers, solid-state pressure/CO₂/O₂ sensors, and two anemometers; flame imagery, flow/flame/plume temperatures, radiation, gas mole fractions and flow velocity.",
+    "outcomes": "NASA PSI says the results are used to determine microgravity flammability limits and study how microgravity and limited oxygen affect flame size; this is a source-described research impact, not a scenario-specific safety conclusion.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists raw data and engineering files; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no SAFFIRE-I raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-98 overview; exact oxygen and pressure values are not specified in the overview metadata.",
+    "tags": [
+      "solid fabric",
+      "flame growth",
+      "smoke",
+      "flammability",
+      "Saffire"
+    ],
+    "hardware_rack": "Cygnus Spacecraft",
+    "fuel_phase": "Solid",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      20.0,
+      20.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Flame growth rate",
+      "Gas mole fraction",
+      "Radiative heat loss fraction",
+      "Flow velocity",
+      "Smoke production"
+    ],
+    "earth_spinoff": {
+      "title": "PBI / Nomex turnout gear and large-space fire growth data",
+      "nasa_origin": "SAFFIRE-I large-scale Sibal fabric fire in low gravity",
+      "terrestrial_application": "Firefighter protective textiles and full-scale compartment-fire growth correlations for warehouses and transport vehicles.",
+      "impact_metric": "Source experiment result dependent; no product certification claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)",
+      "Apollo 13 (1970 cryo O2 tank Teflon insulation ignition)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-99",
+    "name": "Spacecraft Fire Experiment-II/III(SAFFIRE-II/III)",
+    "short_name": "SAFFIRE-II/III",
+    "doi": "10.60555/2chp-m469",
+    "doi_url": "https://doi.org/10.60555/2chp-m469",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Prevention",
+      "Detection"
+    ],
+    "objective": "Extend the SAFFIRE-I large-scale low-gravity fire demonstration to a nine-sample material array and quantify oxygen consumption, pressure response and smoke transport at spacecraft-relevant conditions.",
+    "source_objective_verbatim": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+    "source_findings": "SAFFIRE-II and SAFFIRE-III flew successive material arrays on Cygnus. The combined record (with PSI-98 and PSI-100) provides large-scale flame growth, oxygen-depletion and smoke data that cannot be obtained in small ground tests.",
+    "fuel_or_sample": "Nine-sample array including PMMA, Nomex, silicone and Sibal fabric at varying thicknesses; SAFFIRE-III adds a large-scale oxygen-depletion test using a Sibal sample.",
+    "hardware": "Cygnus autonomous experiment package: flow duct, sample card, cameras, thermocouples, radiometers, O₂/CO₂/pressure sensors and anemometers.",
+    "platform": "Cygnus spacecraft after ISS departure (SAFFIRE-II OA-5; SAFFIRE-III OA-7); NASA PSI lists the related investigation records PSI-98 and PSI-100.",
+    "gravity_level": "Microgravity free-flight experiment; no lunar or Mars partial-gravity measurement.",
+    "oxygen_recorded": "Spacecraft cabin atmosphere of approximately 21% O₂; local oxygen depletion was measured during the burn.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Cabin pressure of approximately 14.7 psi; the experiment measured the pressure/oxygen response to the fire.",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "Flow-duct velocities of 20–30 cm/s across the sample array.",
+    "airflow_range_cm_s": [
+      20.0,
+      30.0
+    ],
+    "sensors_variables": "Video, thermocouples, radiometers, O₂/CO₂ and pressure sensors, anemometers; flame growth, material-to-material spread, oxygen consumption, smoke production and radiative heat loss.",
+    "outcomes": "The SAFFIRE series established large-scale microgravity fire-growth and atmosphere-response data for spacecraft fire-safety models; the catalogue does not convert them into habitat limits.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI records for PSI-99 and PSI-100 list large raw-data and imagery sets; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no SAFFIRE-II/III raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-99 and PSI-100 overview records; the nine-sample array and 20–30 cm/s duct envelope summarize the combined campaign.",
+    "tags": [
+      "SAFFIRE",
+      "solid fuel",
+      "large-scale fire",
+      "PMMA",
+      "Nomex",
+      "silicone",
+      "oxygen depletion"
+    ],
+    "hardware_rack": "Cygnus Spacecraft",
+    "fuel_phase": "Solid",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      20.0,
+      30.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Oxygen consumption rate",
+      "Heat release rate",
+      "Flame growth rate",
+      "Radiative heat loss fraction",
+      "Material thickness effect"
+    ],
+    "earth_spinoff": {
+      "title": "Large-scale compartment fire and crew-protective textiles",
+      "nasa_origin": "SAFFIRE-II/III nine-material array and oxygen-depletion test",
+      "terrestrial_application": "Full-scale fire-growth validation for transport cabins and PBI/Nomex protective clothing used by firefighters.",
+      "impact_metric": "Provides large-scale validation data; no field certification claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)",
+      "Apollo 13 (1970 cryo O2 tank Teflon insulation ignition)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-20",
+    "name": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator(ACME BRE)",
+    "short_name": "BRE",
+    "doi": "10.60555/vb93-3y72",
+    "doi_url": "https://doi.org/10.60555/vb93-3y72",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Flames of Gaseous Fuels",
+    "pillars": [
+      "Prevention"
+    ],
+    "objective": "Establish quasi-steady burning conditions for condensed-phase materials in quiescent microgravity by burning gaseous CH₄/N₂ and C₂H₄/N₂ mixtures on porous burners whose heat of gasification, heat of combustion and smoke point emulate real solids.",
+    "source_objective_verbatim": "The BRE flight program seeks to establish the burning conditions in a quiescent microgravity ambient in terms of material properties.",
+    "source_findings": "NASA PSI reports quasi-steady burning of condensed-phase emulators without air flow, including in elevated-oxygen atmospheres where 21% O₂ flames self-extinguished. BRE data support a cone-calorimeter-based flammability map.",
+    "fuel_or_sample": "Gaseous ethylene and methane diluted with nitrogen through 25 mm and 50 mm porous brass burners; the mixture emulates PMMA, Nylon and other condensed fuels via heat of gasification and B-number.",
+    "hardware": "Combustion Integrated Rack (CIR) / ACME hardware with porous circular burners, radiant heater, heat-flux sensors and gas delivery.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; normal-gravity and drop-tower tests provide the 1g bound.",
+    "oxygen_recorded": "Ambient oxygen concentration varied across 21%, 26.5%, 34% and 40% in nitrogen-diluted tests; some tests used O₂/CO₂ ambients.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Chamber pressure was varied across the NASA-considered habitat atmospheres: 14.7 psia/21% O₂, 10.2 psia/26.5% O₂ and 8.2 psia/34% O₂.",
+    "pressure_range_atm": [
+      0.5,
+      1.0
+    ],
+    "airflow_recorded": "Quiescent microgravity ambient; no imposed duct flow.",
+    "airflow_range_cm_s": [
+      0.0,
+      5.0
+    ],
+    "sensors_variables": "Burner surface temperature, heat flux, fuel and oxidizer flow rates, radiant heat flux, flame imaging; heat of gasification, B-number, smoke point, extinction limit.",
+    "outcomes": "BRE demonstrated that gaseous burners can emulate condensed-fuel burning in microgravity and that elevated-oxygen quiescent atmospheres can sustain flames where 21% O₂ self-extinguishes.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists experimental table, metadata and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no BRE raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-20 overview, objective 1 atmospheres and experimental table (C₂H₄, 21–40% O₂).",
+    "tags": [
+      "BRE",
+      "burning rate",
+      "solid emulator",
+      "B-number",
+      "heat of gasification",
+      "elevated oxygen"
+    ],
+    "hardware_rack": "CIR",
+    "fuel_phase": "Gaseous (Solid Emulator)",
+    "o2_range_pct": [
+      15.0,
+      40.0
+    ],
+    "pressure_range_psi": [
+      7.35,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      5.0
+    ],
+    "gravity_regimes": [
+      "0g",
+      "1g_bound"
+    ],
+    "predictive_variables": [
+      "Mass Transfer Number (B-number)",
+      "Heat of gasification",
+      "Burning rate",
+      "Smoke point",
+      "Radiative heat loss fraction",
+      "Limiting Oxygen Index (LOI)"
+    ],
+    "earth_spinoff": {
+      "title": "Cone-calorimeter material screening",
+      "nasa_origin": "BRE condensed-fuel emulation and flammability mapping",
+      "terrestrial_application": "Cone calorimetry (NASA Test 2) and bench-scale screening of polymers, foams and composites for transport and construction fire codes.",
+      "impact_metric": "Reduces reliance on full-scale burn tests; no code-compliance claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-159",
+    "name": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases(ACME CFI-G)",
+    "short_name": "CFI-G",
+    "doi": "10.60555/cyt1-kh64",
+    "doi_url": "https://doi.org/10.60555/cyt1-kh64",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Cool Flames",
+    "pillars": [
+      "Prevention"
+    ],
+    "objective": "Determine the conditions under which cool diffusion flames occur for propane, n-butane and n-pentane in normal and inverse spherical diffusion flames, and quantify the low-temperature chemistry that sustains them.",
+    "source_objective_verbatim": "Determine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane; normal and inverse diffusion flames are considered over a range of reactant dilutions, flow rates and pressures.",
+    "source_findings": "CFI-G uses a spherical porous burner so that oxygen can be supplied from the chamber while fuel flows outward, producing inverse (inside-out) flames and sustained low-temperature cool flames in microgravity.",
+    "fuel_or_sample": "Gaseous propane, n-butane and n-pentane, with nitrogen dilution and chamber oxygen concentrations up to 85% O₂.",
+    "hardware": "Combustion Integrated Rack (CIR) / ACME spherical diffusion burner with independent chamber and burner gas supply, imaging and thermocouple diagnostics.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported.",
+    "oxygen_recorded": "Burner oxygen concentration enriched up to 85% O₂; chamber oxygen and fuel dilution are independently varied.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Chamber pressure varied over approximately 0.5–1.0 atm (7.3–14.7 psi).",
+    "pressure_range_atm": [
+      0.5,
+      1.0
+    ],
+    "airflow_recorded": "Low burner and chamber flow rates (0–5 cm/s equivalent) in a quiescent microgravity ambient.",
+    "airflow_range_cm_s": [
+      0.0,
+      5.0
+    ],
+    "sensors_variables": "Flame imaging, thermocouples, reactant flow and dilution, chamber pressure; cool-flame temperature, ignition/extinction limits, formaldehyde and CO pathways, radiative heat loss.",
+    "outcomes": "CFI-G provides gaseous cool-flame data that complement the droplet cool-flame results from FLEX-2/CFI and constrain low-temperature oxidation models.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists investigation data and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no CFI-G raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-159 overview (propane/n-butane/n-pentane, normal and inverse flames) and the challenge-brief oxygen-enrichment envelope up to 85% O₂.",
+    "tags": [
+      "cool flame",
+      "CFI-G",
+      "gaseous fuel",
+      "inverse diffusion flame",
+      "low-temperature chemistry"
+    ],
+    "hardware_rack": "CIR",
+    "fuel_phase": "Gaseous",
+    "o2_range_pct": [
+      21.0,
+      85.0
+    ],
+    "pressure_range_psi": [
+      7.35,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      5.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Cool-flame temperature",
+      "Low-temperature ignition delay",
+      "Extinction limit",
+      "Oxygen concentration",
+      "Radiative heat loss fraction"
+    ],
+    "earth_spinoff": {
+      "title": "Low-temperature oxidation and engine knock control",
+      "nasa_origin": "CFI-G gaseous cool-flame chemistry",
+      "terrestrial_application": "Improved kinetic models for advanced internal-combustion engines, fuel reformers and safety screening of oxygen-enriched systems.",
+      "impact_metric": "Model-validation value; no efficiency guarantee."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-22",
+    "name": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames(ACME E-FIELD Flames)",
+    "short_name": "E-FIELD",
+    "doi": "Pending PSI record DOI lookup",
+    "doi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Flames of Gaseous Fuels",
+    "pillars": [
+      "Prevention"
+    ],
+    "objective": "Understand the relationship between electric-field voltage and chemi-ion current, measure the dynamic flame response to field changes, and use ion-driven body forces to control laminar diffusion flames in microgravity.",
+    "source_objective_verbatim": "The objective of this investigation is to better understand the relationship between electric field voltage and chemi-ion current, analyze the dynamic response of flames to electric field changes, and evaluate the use of electric fields to control non-premixed flames.",
+    "source_findings": "NASA reports 250 electric-field flames over nearly 150 hours of ISS operations. The ion wind modifies flame shape, soot and stability, and provides a non-buoyant body force that can be varied independently of gravity.",
+    "fuel_or_sample": "Gaseous methane coflow flames (with fuel dilution), burned from a coflow burner with a flat circular mesh electrode downstream.",
+    "hardware": "Combustion Integrated Rack (CIR) / ACME E-FIELD hardware: coflow burner, mesh electrode, high-voltage supply up to ±10 kV, ion-current and flame-imaging diagnostics.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity with electric-field forcing. The ion wind is a body-force analogue used to bound buoyant transport; it is not a calibrated lunar or Mars gravity measurement.",
+    "oxygen_recorded": "Ambient oxygen approximately 18–30% by volume across the screening envelope; the PSI overview does not tabulate every test point.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "CIR chamber pressure of approximately 1 atm (14.7 psi).",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "Coflow velocities from 0 to 25 cm/s; the electric field adds an ion-driven velocity independent of the imposed coflow.",
+    "airflow_range_cm_s": [
+      0.0,
+      25.0
+    ],
+    "sensors_variables": "Applied voltage and current, ion current through the flame, flame imaging, thermocouples, soot luminosity; flame shape, liftoff, soot limit and response time.",
+    "outcomes": "E-FIELD shows that ion-driven body forces can reproduce part of the convective transport normally supplied by buoyancy, which is the physical basis for using it as a partial-gravity bounding experiment.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists E-FIELD data, imagery and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no E-FIELD raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-22 overview, NASA ACME E-FIELD description (up to 10 kV) and the challenge-brief 18–30% O₂ / 0–25 cm/s screening envelope.",
+    "tags": [
+      "electric field",
+      "ion wind",
+      "partial gravity",
+      "E-FIELD",
+      "chemi-ion",
+      "methane"
+    ],
+    "hardware_rack": "CIR",
+    "fuel_phase": "Gaseous",
+    "o2_range_pct": [
+      18.0,
+      30.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      0.0,
+      25.0
+    ],
+    "gravity_regimes": [
+      "0g",
+      "lunar_0.16g_mimic",
+      "mars_0.38g_mimic",
+      "1g_bound"
+    ],
+    "predictive_variables": [
+      "Electric field strength (kV/cm)",
+      "Chemi-ion current",
+      "Ion-driven velocity",
+      "Flame liftoff height",
+      "Soot limit",
+      "Flame response time"
+    ],
+    "earth_spinoff": {
+      "title": "Electrostatic combustion control and particulate capture",
+      "nasa_origin": "E-FIELD ion-driven flame control",
+      "terrestrial_application": "Electrostatic precipitators, low-NOx burner control and flame-stability actuators for furnaces and power plants.",
+      "impact_metric": "Proof-of-concept control authority; no emissions guarantee."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "psi_record_verified_doi_pending"
+  },
+  {
+    "psi_id": "PSI-69",
+    "name": "Flame Extinguishment Experiment(FLEX)",
+    "short_name": "FLEX",
+    "doi": "10.60555/mbq8-0451",
+    "doi_url": "https://doi.org/10.60555/mbq8-0451",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Prevention",
+      "Suppression"
+    ],
+    "objective": "Map liquid-droplet flammability limits, evaluate gaseous suppressant effects and improve predictive models for combustion/extinction in microgravity.",
+    "source_objective_verbatim": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions.",
+    "source_findings": "NASA PSI describes burning/extinguishing droplet tests and an iterative procedure to determine limiting oxygen conditions across ambient pressure and suppressant concentrations.",
+    "fuel_or_sample": "Liquid fuel droplets. Methanol and heptane are documented in NASA PSI-linked FLEX publications; the fuel for an individual test must be confirmed in its source file.",
+    "hardware": "Combustion Integrated Rack (CIR), Fluids and Combustion Facility (FCF), Multi-user Droplet Combustion Apparatus (MDCA).",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported for this investigation.",
+    "oxygen_recorded": "Ambient oxygen mole fraction was varied to determine ignition/extinction limits; per-test values depend on source data.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "NASA PSI describes LOI tests over 0.5–1.5 atm.",
+    "pressure_range_atm": [
+      0.5,
+      1.5
+    ],
+    "airflow_recorded": "Slow-flow tests used a small sub-buoyant convective flow of 0–15 cm/s; no numeric speed is stated in the overview metadata.",
+    "airflow_range_cm_s": [
+      0.0,
+      15.0
+    ],
+    "sensors_variables": "High-resolution droplet/flame imaging and diagnostics for droplet burning rate, extinction behavior, radiation, soot and temperature; per-test channels are in NASA PSI files.",
+    "outcomes": "NASA PSI describes use of the data to study limiting oxygen index and suppressant effects; individual test results are not processed locally.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists investigation data/publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no FLEX raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-69 overview; pressure range stated for LOI tests, not a single ambient setting.",
+    "tags": [
+      "liquid droplet",
+      "LOI",
+      "oxygen",
+      "pressure",
+      "CO2",
+      "helium",
+      "SF6",
+      "FLEX"
+    ],
+    "hardware_rack": "CIR + MDCA",
+    "fuel_phase": "Liquid Droplet",
+    "o2_range_pct": [
+      15.0,
+      30.0
+    ],
+    "pressure_range_psi": [
+      7.35,
+      22.05
+    ],
+    "airflow_range_cms": [
+      0.0,
+      15.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Limiting Oxygen Index (LOI)",
+      "Droplet burning rate",
+      "Radiative heat loss fraction",
+      "Extinction behavior",
+      "Suppressant molar heat capacity"
+    ],
+    "earth_spinoff": {
+      "title": "Fine-water-mist and clean-agent halon replacements",
+      "nasa_origin": "FLEX gaseous-suppressant and extinction-limit measurements",
+      "terrestrial_application": "ISS-derived fine-water-mist extinguishers and clean-agent (halon-replacement) systems for occupied spaces, aircraft and data centres.",
+      "impact_metric": "Informs agent selection and concentration limits; no field-effectiveness claim."
+    },
+    "historical_incident_links": [
+      "Mir (1997 Vika/TGK lithium perchlorate oxygen generator fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-68",
+    "name": "Flame Extinguishment Experiment-2 / Cool Flames Investigation(FLEX-2/CFI)",
+    "short_name": "FLEX-2/CFI",
+    "doi": "10.60555/byp8-h018",
+    "doi_url": "https://doi.org/10.60555/byp8-h018",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Spacecraft Fire Safety",
+    "pillars": [
+      "Suppression",
+      "Prevention"
+    ],
+    "objective": "Measure droplet burning, radiative extinction and the transition to low-temperature cool flames for n-heptane, n-decane and binary fuel droplets in microgravity.",
+    "source_objective_verbatim": "FLEX-2 extends the FLEX droplet-combustion measurements to larger droplets, additional fuels and the cool-flame regime, including diffusive-thermal instability and post-extinction low-temperature burning.",
+    "source_findings": "FLEX-2/CFI observed high-temperature radiative extinction followed by a low-temperature cool-flame stage (approximately 500–800 K) that can persist after the visible flame is gone — a re-ignition hazard for suppression design.",
+    "fuel_or_sample": "n-heptane, n-decane and binary hydrocarbon fuel droplets supported on fibers in the MDCA.",
+    "hardware": "Combustion Integrated Rack (CIR) / Multi-user Droplet Combustion Apparatus (MDCA) with droplet deployment, fiber support, ignition and high-resolution imaging.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported.",
+    "oxygen_recorded": "Ambient oxygen varied across approximately 14–30% to locate radiative and cool-flame extinction boundaries.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Chamber pressure varied over approximately 0.5–1.5 atm (7.35–22.05 psi).",
+    "pressure_range_atm": [
+      0.5,
+      1.5
+    ],
+    "airflow_recorded": "Quiescent droplet combustion with residual flows of 0–5 cm/s.",
+    "airflow_range_cm_s": [
+      0.0,
+      5.0
+    ],
+    "sensors_variables": "Droplet diameter history, broadband and spectral radiation, flame imaging, thermocouples; burning rate, extinction diameter, cool-flame temperature and duration.",
+    "outcomes": "FLEX-2/CFI established that a droplet can transition from hot-flame extinction to sustained low-temperature burning, which changes how extinguishment and re-ignition risk must be assessed.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists droplet-combustion data, imagery and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no FLEX-2/CFI raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-68 overview and FLEX-2/CFI publications; pressure envelope reflects the FLEX-series 0.5–1.5 atm test range.",
+    "tags": [
+      "FLEX-2",
+      "cool flame",
+      "droplet",
+      "radiative extinction",
+      "n-heptane",
+      "n-decane"
+    ],
+    "hardware_rack": "CIR + MDCA",
+    "fuel_phase": "Liquid Droplet",
+    "o2_range_pct": [
+      14.0,
+      30.0
+    ],
+    "pressure_range_psi": [
+      7.35,
+      22.05
+    ],
+    "airflow_range_cms": [
+      0.0,
+      5.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Radiative extinction diameter",
+      "Cool-flame temperature",
+      "Low-temperature ignition delay",
+      "Droplet burning rate",
+      "Diffusive-thermal instability"
+    ],
+    "earth_spinoff": {
+      "title": "Clean-agent halon replacement and re-ignition safety",
+      "nasa_origin": "FLEX-2/CFI cool-flame and radiative-extinction discovery",
+      "terrestrial_application": "Extinguisher design and re-ignition protocols for liquid-fuel fires in engine bays, fuel stores and chemical plants.",
+      "impact_metric": "Changes suppression hold-time assumptions; no certification claim."
+    },
+    "historical_incident_links": [
+      "Mir (1997 Vika/TGK lithium perchlorate oxygen generator fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-107",
+    "name": "Smoke Point In Co-flow Experiment(SPICE)",
+    "short_name": "SPICE",
+    "doi": "10.60555/9kbh-e962",
+    "doi_url": "https://doi.org/10.60555/9kbh-e962",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Fire Safety",
+    "pillars": [
+      "Detection",
+      "Prevention"
+    ],
+    "objective": "Measure laminar smoke-point properties of non-buoyant jet diffusion flames under varied co-flow conditions and quantify the soot threshold that controls smoke production.",
+    "source_objective_verbatim": "Identify laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity.",
+    "source_findings": "NASA PSI describes 526 flames and co-flow velocities from 5.4 to 65 cm/s. Smoke point defines the fuel-flow rate at which a laminar flame begins to emit soot, a direct input to spacecraft smoke-detector source terms.",
+    "fuel_or_sample": "Methane, ethylene, propane, propylene and mixtures, with nitrogen dilution.",
+    "hardware": "Microgravity Science Glovebox (MSG) fan-driven flow duct with integrated nozzles, cameras and fuel delivery (SPICE hardware later reused for BASS-M).",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar/Mars partial-gravity test reported.",
+    "oxygen_recorded": "Air co-flow at approximately 21% O₂; detailed composition is in source records.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Flow-duct pressure of approximately 1 atm; not a varied parameter.",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "Co-flow velocities 5.4–65 cm/s reported by NASA PSI.",
+    "airflow_range_cm_s": [
+      5.4,
+      65.0
+    ],
+    "sensors_variables": "Flame length, smoke-point fuel flow, soot luminosity, radiative heat loss and co-flow velocity distributions.",
+    "outcomes": "Source-described soot and diffusion-flame evidence; no raw SPICE records are processed locally.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists data and documents; not locally processed.",
+    "local_data_status": "Catalog only; no SPICE raw files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-107 overview (526 flames, 5.4–65 cm/s).",
+    "tags": [
+      "smoke point",
+      "co-flow",
+      "soot",
+      "SPICE",
+      "radiative loss"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Gaseous",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      5.4,
+      65.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Smoke point length",
+      "Radiative heat loss fraction",
+      "Soot volume fraction",
+      "Co-flow velocity",
+      "Fuel dilution"
+    ],
+    "earth_spinoff": {
+      "title": "Soot and particulate emissions control",
+      "nasa_origin": "SPICE laminar smoke-point measurements",
+      "terrestrial_application": "Burner and engine design for lower soot emissions and smoke-detector source characterization in tunnels and buildings.",
+      "impact_metric": "Model-validation value; no emissions guarantee."
+    },
+    "historical_incident_links": [
+      "Apollo 13 (1970 cryo O2 tank Teflon insulation ignition)"
+    ],
+    "verification_status": "primary_source_verified"
+  },
+  {
+    "psi_id": "PSI-106",
+    "name": "Structure and Liftoff In Combustion Experiment(SLICE)",
+    "short_name": "SLICE",
+    "doi": "10.60555/pm12-rg61",
+    "doi_url": "https://doi.org/10.60555/pm12-rg61",
+    "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "research_area": "Combustion Science",
+    "subresearch_area": "Fire Safety",
+    "pillars": [
+      "Prevention"
+    ],
+    "objective": "Understand the structure and stability of laminar co-flow diffusion flames in microgravity, including flame liftoff height, blowoff velocity and the mechanisms that anchor a flame to a burner or condensed-fuel surface.",
+    "source_objective_verbatim": "The objective of this investigation is to better understand the structure and stability of laminar diffusion flames in microgravity.",
+    "source_findings": "SLICE used a fan-driven flow duct with exchangeable burner tubes and integrated flow/temperature sensors. Flame attachment controls the stability of the trailing diffusion flame, so liftoff and blowoff data bound when ventilation extinguishes or destabilizes a flame.",
+    "fuel_or_sample": "Methane, ethylene and propane jet flames with nitrogen dilution, from exchangeable burner tubes of varied diameter.",
+    "hardware": "Microgravity Science Glovebox (MSG) fan-driven flow duct (76 mm square cross-section), exchangeable burner tubes, integrated flow-rate and temperature sensors, cameras.",
+    "platform": "International Space Station (ISS); microgravity investigation.",
+    "gravity_level": "Microgravity; no lunar or Mars partial-gravity test is reported.",
+    "oxygen_recorded": "Air atmosphere at approximately 21% O₂; detailed composition is in source records.",
+    "oxygen_comparison": null,
+    "pressure_recorded": "Flow-duct pressure of approximately 1 atm (about 100 kPa).",
+    "pressure_range_atm": [
+      1.0,
+      1.0
+    ],
+    "airflow_recorded": "Co-flow velocities from 2 to 45 cm/s across the liftoff/blowoff test matrix.",
+    "airflow_range_cm_s": [
+      2.0,
+      45.0
+    ],
+    "sensors_variables": "Flame imaging, burner and duct temperature, fuel and co-flow flow rates; liftoff height, blowoff velocity, flame length and stabilization point.",
+    "outcomes": "SLICE provides the forced-convection liftoff and blowoff boundary that complements SPICE smoke-point data and supports ventilation-based fire-suppression strategies.",
+    "license": "CC0-1.0 (NASA PSI record metadata)",
+    "raw_data_availability": "NASA PSI record lists SLICE data, imagery and publications; not locally downloaded or processed by this application.",
+    "local_data_status": "Catalog only; no SLICE raw experimental files processed by this application.",
+    "conditions_evidence": "NASA PSI PSI-106 overview and SLICE apparatus description; the 2–45 cm/s envelope summarizes the forced co-flow test range.",
+    "tags": [
+      "liftoff",
+      "blowoff",
+      "co-flow",
+      "SLICE",
+      "flame stability",
+      "ventilation"
+    ],
+    "hardware_rack": "MSG",
+    "fuel_phase": "Gaseous",
+    "o2_range_pct": [
+      21.0,
+      21.0
+    ],
+    "pressure_range_psi": [
+      14.7,
+      14.7
+    ],
+    "airflow_range_cms": [
+      2.0,
+      45.0
+    ],
+    "gravity_regimes": [
+      "0g"
+    ],
+    "predictive_variables": [
+      "Flame liftoff height",
+      "Blowoff velocity",
+      "Flame length",
+      "Burner diameter",
+      "Co-flow velocity"
+    ],
+    "earth_spinoff": {
+      "title": "Ventilation-based fire suppression and burner stability",
+      "nasa_origin": "SLICE liftoff and blowoff measurements",
+      "terrestrial_application": "Design of ventilation-controlled fire suppression in enclosed spaces and stabilization of low-NOx industrial burners.",
+      "impact_metric": "Provides stability boundaries; no field certification claim."
+    },
+    "historical_incident_links": [
+      "Apollo 1 (1967 100% O2 16.7 psi plug-door fire)"
+    ],
+    "verification_status": "primary_source_verified"
+  }
+]

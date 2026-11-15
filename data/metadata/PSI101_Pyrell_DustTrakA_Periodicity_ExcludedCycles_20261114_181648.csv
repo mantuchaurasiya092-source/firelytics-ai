@@ -1,0 +1,52 @@
+﻿RunID,ExcludedType,Reason,Count,Cycle,SourceRows
+64,RejectedSourceRows,DustTrakAState mismatch,69,,
+64,RejectedSourceRows,RunMode mismatch,48,,
+64,RejectedSourceRows,TestNumber mismatch,62,,
+76,RejectedSourceRows,DustTrakAState mismatch,74,,
+76,RejectedSourceRows,RunMode mismatch,72,,
+76,RejectedSourceRows,TestNumber mismatch,13,,
+84,RejectedSourceRows,TestNumber mismatch,58,,
+84,RejectedSourceRows,DustTrakAState mismatch,147,,
+84,RejectedSourceRows,RunMode mismatch,85,,
+95,RejectedSourceRows,TestNumber mismatch,65,,
+95,RejectedSourceRows,DustTrakAState mismatch,117,,
+95,RejectedSourceRows,RunMode mismatch,379,,
+97,RejectedSourceRows,TestNumber mismatch,372,,
+97,RejectedSourceRows,DustTrakAState mismatch,73,,
+97,RejectedSourceRows,RunMode mismatch,30,,
+63,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1949,11;12
+63,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1951,15;16
+63,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1952,17;18
+63,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1953,19;20;21;22
+63,MissingCycleNumber,No cycle survived historical row eligibility,1,1954,
+64,MixedBandCycle,Multiple distinct historical bands in one cycle,1,3196,267;268
+64,MissingCycleNumber,No cycle survived historical row eligibility,1,3203,
+76,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1327,297;298
+76,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1329,299;300
+76,MissingCycleNumber,No cycle survived historical row eligibility,1,1328,
+76,MissingCycleNumber,No cycle survived historical row eligibility,1,1330,
+84,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1021,412;413
+84,MixedBandCycle,Multiple distinct historical bands in one cycle,1,1028,419;420
+84,MissingCycleNumber,No cycle survived historical row eligibility,1,1024,
+84,MissingCycleNumber,No cycle survived historical row eligibility,1,1030,
+95,MixedBandCycle,Multiple distinct historical bands in one cycle,1,8187,702;703;704;705;706;707;708
+95,MixedBandCycle,Multiple distinct historical bands in one cycle,1,8188,709;710;711;712;713
+95,MissingCycleNumber,No cycle survived historical row eligibility,1,8189,
+97,MixedBandCycle,Multiple distinct historical bands in one cycle,1,740,339;340
+97,MixedBandCycle,Multiple distinct historical bands in one cycle,1,742,341;342
+97,MixedBandCycle,Multiple distinct historical bands in one cycle,1,745,344;345
+97,MissingCycleNumber,No cycle survived historical row eligibility,1,741,
+97,MissingCycleNumber,No cycle survived historical row eligibility,1,743,
+97,MissingCycleNumber,No cycle survived historical row eligibility,1,746,
+63,ValidationAndAccounting,Mixed cycles excluded from binary statistics,4,,
+64,ValidationAndAccounting,Mixed cycles excluded from binary statistics,1,,
+76,ValidationAndAccounting,Mixed cycles excluded from binary statistics,2,,
+84,ValidationAndAccounting,Mixed cycles excluded from binary statistics,2,,
+95,ValidationAndAccounting,Mixed cycles excluded from binary statistics,2,,
+97,ValidationAndAccounting,Mixed cycles excluded from binary statistics,3,,
+63,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,1,1954,
+64,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,1,3203,
+76,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,2,1328;1330,
+84,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,2,1024;1030,
+95,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,1,8189,
+97,MissingCycleSummary,Cycle numbers with no historical-eligible selected row,3,741;743;746,

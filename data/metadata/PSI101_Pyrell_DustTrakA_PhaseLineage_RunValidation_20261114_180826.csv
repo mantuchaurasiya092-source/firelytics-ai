@@ -1,0 +1,7 @@
+﻿RunID,RawRows,SelectedRows,FirstCycle,LastCycle,UniqueCycles,ReconstructedClassified,ArchivedClassified,ReconstructedExceptions,ArchivedExceptions,ExceptionCycleIdentityMatches,ReconstructedMixed,ArchivedMixed,MixedCycleSetMatches,MixedSourceRowSetMatches,ReconstructedDuplicates,ArchivedDuplicates,MissingCycleNumbers,Phase0Band,Phase1Band,NaiveReconstructedClassified,NaiveReconstructedExceptions
+63,1236,1236,1939,3166,1227,1223,1223,8,8,True,4,4,True,True,7,7,1,20000+,10000-14999,1223,8
+64,1688,1509,3037,4542,1505,1504,1504,6,6,True,1,1,True,True,4,4,1,10000-14999,20000+,1603,6
+76,1427,1268,1166,2431,1264,1262,1262,2,2,True,2,2,True,True,4,4,2,10000-14999,20000+,1387,2
+84,1556,1266,870,2135,1264,1262,1262,185,185,True,2,2,True,True,2,2,2,20000+,10000-14999,1431,189
+95,1891,1330,7976,9293,1317,1315,1315,96,96,True,2,2,True,True,5,5,1,10000-14999,20000+,1781,96
+97,1801,1326,518,1843,1323,1320,1320,0,0,True,3,3,True,True,3,3,3,10000-14999,20000+,1396,0

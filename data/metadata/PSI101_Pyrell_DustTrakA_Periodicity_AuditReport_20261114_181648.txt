@@ -1,0 +1,51 @@
+Periodicity and phase-stability audit — PSI-101 Pyrell DustTrak A
+Generated 20261114_181648. No original source CSVs or archived audit outputs were changed.
+
+VALIDATION GATE
+All six runs passed before analysis or output writing: historical classified-cycle totals, exception counts and exact exception cycle identities match archived RelativeCyclePhase records. Mixed cycle identities/source rows and duplicate-cycle counts also match. Per-run checkpoint details: Run 63: classified 1223/1223, exceptions 8/8, exception identities match=True; Run 64: classified 1504/1504, exceptions 6/6, exception identities match=True; Run 76: classified 1262/1262, exceptions 2/2, exception identities match=True; Run 84: classified 1262/1262, exceptions 185/185, exception identities match=True; Run 95: classified 1315/1315, exceptions 96/96, exception identities match=True; Run 97: classified 1320/1320, exceptions 0/0, exception identities match=True
+
+METHODS
+Recovered row eligibility: trimmed TestNumber equals RunID; RunMode=3; DustTrakAState=6; DustTrakAPower=1; finite measurement, analog and cycle; measurement != -999; integer cycle. Historical four-band rules: Below 10000 (<10000), 10000-14999 ([10000,15000)), 15000-19999 ([15000,20000)), 20000+ (>=20000). Multiple distinct bands in a cycle produce MixedBand. The phase mapping is fixed from the archived per-run PhaseSummary; relative phase uses actual cycle minus archived FirstCycle modulo two. Mixed cycles are retained in sequence/separate table, but excluded from binary statistics. Missing cycle numbers are never imputed; lags and blocks use numeric cycle adjacency. Autocorrelation pairs cycle c with c+lag.
+Square-wave model predicts an exception during a width-8-to-13 phase window in each period 18–26; all offsets are searched. It maximizes training accuracy with deterministic ties favoring smaller period, then width, then offset. The constant-rate baseline probability is the training exception fraction; thresholding that rate at 0.5 yields the reported majority-class baseline (ties choose agreement). Full-sequence fits are in-sample; holdout results freeze all fit parameters. Precision/recall/F1 refer to exception as positive. Sample SD is reported for block lengths and intervals.
+
+RUN 84
+185 exceptions among 1262 binary-eligible cycles; 2 mixed cycles excluded. Exception block lengths mean/median/min/max/SD=9.25/10.50/1/11/3.31; exception start intervals mean/median/min/max/SD=58.53/21.00/7/742/165.54.
+Lag autocorrelation: lag 10: r=-0.10918256130887019, n=1248; lag 11: r=-0.14759008089951778, n=1247; lag 21: r=0.896461279235728, n=1237; lag 22: r=0.8800099110618804, n=1236; full lag series and n in LagCorrelation CSV.
+Full-sequence best in-sample model P=21, width=8, offset=1; accuracy=0.6815, precision=0.2754, recall=0.7189, F1=0.3982, baseline accuracy=0.8534, n=1262.
+First-half fit -> second-half evaluation: P=26, width=8, offset=17; holdout accuracy=0.5832, F1=0.2987, constant baseline accuracy=0.7116, train accuracy=0.7005, eval n=631.
+Second-half fit -> first-half evaluation: P=21, width=8, offset=1; holdout accuracy=0.6181, F1=0.0163, constant baseline accuracy=0.9952, train accuracy=0.7448, eval n=631.
+Previously highlighted window fit (1770-2135) gives P=21, width=10, offset=0; window fit accuracy=0.8634 (n=366), outside-window frozen evaluation accuracy=0.5234 vs baseline 0.9967 (n=896).
+
+RUN 95
+96 exceptions among 1315 binary-eligible cycles; 2 mixed cycles excluded. Exception block lengths mean/median/min/max/SD=10.67/11.00/10/11/0.50; exception start intervals mean/median/min/max/SD=21.50/21.50/21/22/0.53.
+Lag autocorrelation: lag 10: r=-0.01212686567164177, n=1302; lag 11: r=-0.05717496542185339, n=1301; lag 21: r=0.8424511854951185, n=1291; lag 22: r=0.8311871859296482, n=1290; full lag series and n in LagCorrelation CSV.
+Full-sequence best in-sample model P=26, width=8, offset=19; accuracy=0.6768, precision=0.0898, recall=0.3750, F1=0.1449, baseline accuracy=0.9270, n=1315.
+First-half fit -> second-half evaluation: P=26, width=8, offset=10; holdout accuracy=0.6079, F1=0.1513, constant baseline accuracy=0.8541, train accuracy=0.6956, eval n=658.
+Second-half fit -> first-half evaluation: P=22, width=8, offset=18; holdout accuracy=0.6347, F1=0.0000, constant baseline accuracy=1.0000, train accuracy=0.7021, eval n=657.
+Previously highlighted window fit (8676-8875) gives P=22, width=11, offset=17; window fit accuracy=0.8850 (n=200), outside-window frozen evaluation accuracy=0.5004 vs baseline 1.0000 (n=1115).
+
+ALL-RUN COMPARISON
+Run 63: classified=1223, mixed excluded=4, missing cycle numbers=1, duplicates=7, exceptions=8, exception blocks=1, exception block median=8, start interval median=0.
+Run 64: classified=1504, mixed excluded=1, missing cycle numbers=1, duplicates=4, exceptions=6, exception blocks=1, exception block median=6, start interval median=0.
+Run 76: classified=1262, mixed excluded=2, missing cycle numbers=2, duplicates=4, exceptions=2, exception blocks=1, exception block median=2, start interval median=0.
+Run 84: classified=1262, mixed excluded=2, missing cycle numbers=2, duplicates=2, exceptions=185, exception blocks=20, exception block median=10.5, start interval median=21.
+Run 95: classified=1315, mixed excluded=2, missing cycle numbers=1, duplicates=5, exceptions=96, exception blocks=9, exception block median=11, start interval median=21.5.
+Run 97: classified=1320, mixed excluded=3, missing cycle numbers=3, duplicates=3, exceptions=0, exception blocks=0, exception block median=0, start interval median=0.
+
+INTERPRETATION
+Run 84: the dominant exception block train in cycles 1771–2135 has a 21–22-cycle recurrence, while the full run is not uniformly periodic (all exception-start intervals span 7–742 cycles, median 21; isolated early blocks and a terminal partial block affect the range). Half-split period/offset stability is unstable (first-fit P=26,offset=17; reverse-fit P=21,offset=1). The frozen outside-window model comparison is in CandidateModel; it tests whether the selected-window fit generalizes.
+Run 95: the exception-active pattern has regular 21–22-cycle starts inside cycles 8677–8858 (all 8 start intervals range 21–22; median 21.5), but all recorded exceptions are confined to the previously highlighted 8676–8875 window; it does not persist into the rest of the run. Half-split period/offset stability is unstable (first-fit P=26,offset=10; reverse-fit P=22,offset=18). The frozen outside-window model comparison is in CandidateModel; it tests whether the selected-window fit generalizes.
+Exception-block lengths are reported directly; consistency is assessed from their mean/median/spread, not assumed from the selected windows. Other four runs are comparison series and should be interpreted through their counts and candidate metrics rather than assumed to share a pattern. Missing cycles and mixed cycles break block continuity and remove lag pairs; duplicate source rows are collapsed to one cycle but retained as multiplicity. BoundaryRows lists source rows, timestamp seconds and repeated timestamps for every exception-block start/end in Runs 84/95. Timestamp/row multiplicity coincidences are descriptive only and do not identify an acquisition mechanism.
+
+LIMITATIONS
+No physical mechanism, instrument fault or acquisition behavior can be established from these phase and timestamp associations. Model search selects from many phase offsets and widths, so in-sample performance is optimistic. Half-split tests reduce this concern but do not provide independent external validation. The historical phase mapping is preserved exactly; results remain conditional on that validated definition.
+
+Files created:
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_CycleSequence_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_BlockEvents_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_LagCorrelation_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_CandidateModel_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_BoundaryRows_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_RunMetrics_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_ExcludedCycles_20261114_181648.csv
+C:\Users\mantu\firelytics-ai\data\metadata\PSI101_Pyrell_DustTrakA_Periodicity_AuditReport_20261114_181648.txt

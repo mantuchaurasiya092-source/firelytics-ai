@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-local/
+venv/
+env/
+.pytest_cache/
+.local/
+.coverage
+htmlcov/
+backend/.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Node / Vercel
+node_modules/
+.next/
+.vercel/
+.tools/
+frontend/next-env.d.ts
+frontend/tsconfig.tsbuildinfo
+frontend/AGENTS.md
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+/data/raw/PSI-101/

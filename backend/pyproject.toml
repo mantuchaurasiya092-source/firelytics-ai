@@ -1,0 +1,10 @@
+[project]
+name = "firelytics-backend"
+version = "1.0.0"
+description = "FIRELYTICS AI NASA PSI and verified archived SAME-R API"
+requires-python = ">=3.12,<3.16"
+dependencies = ["fastapi==0.117.1"]
+
+[project.optional-dependencies]
+test = ["httpx==0.28.1", "pytest==8.4.2"]
+ml = ["scikit-learn>=1.8,<2"]

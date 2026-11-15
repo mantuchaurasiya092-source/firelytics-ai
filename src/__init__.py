@@ -1,0 +1,1 @@
+"""Firelytics AI application modules."""

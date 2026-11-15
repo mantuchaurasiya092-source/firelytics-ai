@@ -1,0 +1,23 @@
+{
+  "name": "firelytics-ai-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/next.mjs dev --hostname 0.0.0.0",
+    "build": "node scripts/next.mjs build",
+    "start": "node scripts/next.mjs start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": { "node": ">=22.0.0 <23" }
+}
